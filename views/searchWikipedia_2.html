@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="../bower_components/rxjs/modules/rx-lite/rx.lite.js"></script>
+<script src="../bower_components/rx-angular/modules/rx.lite.angular/rx.lite.angular.js"></script>
+<script src="../controllers/searchWikipedia_2_controller.js"></script>
+
+<body>
+    <div class="container" ng-app="example2" ng-controller="AppCtrl2">
+        <input type="text" ng-model="search">
+        <button ng-click="click()">Search</button>
+        <ul>
+            <li ng-repeat="result in results">{{result}}</li>
+        </ul>
+    </div>
+</body>
+
+</html>

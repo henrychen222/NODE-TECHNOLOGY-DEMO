@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="../bower_components/rxjs/modules/rx-lite/rx.lite.js"></script>
+<script src="../bower_components/rx-angular/modules/rx.lite.angular/rx.lite.angular.js"></script>
+<script src="../controllers/searchWikipedia_1_controller.js"></script>
+
+<body>
+  <div class="container" ng-app="example" ng-controller="AppCtrl">
+    <h2>Reactive Angular</h2>
+    <ul class="list-unstyled">
+      <li>observedChange {{observedChange}}</li>
+      <li>newValue: {{newValue}}</li>
+      <li>oldValue: {{oldValue}}</li>
+    </ul>
+
+    <input type="text" ng-model="name" />
+  </div>
+</body>
+
+</html>
